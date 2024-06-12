@@ -1,0 +1,23 @@
+.mine_page {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  position: relative;
+}
+
+.total_balance {
+  font-size: 42px;
+  position: absolute;
+  top: calc(100vh - 90%);
+}
+
+.main_coin {
+  position: absolute;
+  top: calc(100vh - 50%);
+}
