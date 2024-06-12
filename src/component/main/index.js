@@ -16,11 +16,11 @@ export default function Page() {
     setTotalBalance(totalBalance + 1);
   } 
     return (
-      <header className="mine_page">
+      <header className="page mine_page">
 
         <div className="total_balance">{totalBalance}</div>
 
-        <div className="main_coin" onClick={handleClick}>
+        <div className="main_coin scale" onClick={handleClick}>
           <img src={logo} className="App-logo" alt="logo" />
         </div>
 
