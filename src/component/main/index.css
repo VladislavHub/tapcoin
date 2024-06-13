@@ -1,6 +1,7 @@
 .mine_page {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 90px);
   font-size: calc(10px + 2vmin);
+  overflow: hidden;
 }
 
 .total_balance {
@@ -11,7 +12,81 @@
 
 .main_coin {
   position: absolute;
-  top: calc(100vh - 50%);
+  top: calc(100vh - 60%);
+}
+
+.mine_page-header {
+  top: 0px;
+
+}
+
+.nav_bar {
+  height: 8vh;
+  width: 100%;
+
+  position: absolute;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px;
+}
+
+.nav_bar_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.header_item {
+  width: 30%;
+  background-color: #535860;
+}
+
+.box_for_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.coin_for_click_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:14px;
+}
+
+.coin_for_click {
+  width: 24px;
+  height: 24px;
+}
+
+.mine_page-footer {
+  bottom: 0px;
+  justify-content: space-evenly;
+}
+
+.footer_item {
+  width: 20%;
+  background-color: #474d57;
+
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+}
+
+.limit_for_tap {
+  max-width: fit-content;
+  width: 100%;
+  height: 30px;
+  position: relative;
+  top: 30vh;
 }
 
 @keyframes scaleAnimation {
@@ -26,6 +101,11 @@
   }
 }
 
-.scale {
+/* .scale {
   animation: scaleAnimation 0.3s ease-out;
+} */
+
+.scale:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease-out;
 }
